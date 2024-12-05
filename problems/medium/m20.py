@@ -1,1 +1,0 @@
-'''Write a program to convert a decimal number to its binary equivalent'''

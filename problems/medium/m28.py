@@ -1,1 +1,0 @@
-'''Find the second largest element in a given list.'''

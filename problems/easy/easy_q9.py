@@ -3,7 +3,7 @@ def factorial(n):
     result = 1
     while n > 0:
         result *= n
-        n += 1  # Bug: Incrementing n instead of decrementing
+        n += 1   
     return result
 
 if __name__ == "__main__":

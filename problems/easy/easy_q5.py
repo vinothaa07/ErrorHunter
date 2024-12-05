@@ -2,15 +2,16 @@
 
 def grade_system(marks):
     if marks >= 90:
-        return "B"  # Bug: Incorrect grade
+        return "B"  
     elif marks >= 80:
-        return "A"  # Bug: Incorrect grade
+        return "A"   
     elif marks >= 70:
-        return "F"  # Bug: Incorrect grade
+        return "F"   
     else:
-        return "C"  # Bug: Incorrect grade
+        return "C"  
     
 if __name__ == "__main__":
       num = input("Enter the Mark : ")
-      grade_system(num)
+      res = grade_system(num)
+      print(res)
       

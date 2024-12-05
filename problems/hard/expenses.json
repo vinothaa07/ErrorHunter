@@ -1,0 +1,62 @@
+[
+    {
+        "amount": 50.0,
+        "category": "Food",
+        "description": "Lunch at cafe",
+        "date": "2024-12-01"
+    },
+    {
+        "amount": 120.0,
+        "category": "Transportation",
+        "description": "Taxi fare to office",
+        "date": "2024-12-02"
+    },
+    {
+        "amount": 200.0,
+        "category": "Entertainment",
+        "description": "Movie tickets",
+        "date": "2024-12-03"
+    },
+    {
+        "amount": 75.0,
+        "category": "Food",
+        "description": "Groceries shopping",
+        "date": "2024-12-04"
+    },
+    {
+        "amount": 150.0,
+        "category": "Bills",
+        "description": "Electricity bill",
+        "date": "2024-12-05"
+    },
+    {
+        "amount": 40.0,
+        "category": "Food",
+        "description": "Dinner at restaurant",
+        "date": "2024-12-06"
+    },
+    {
+        "amount": 60.0,
+        "category": "Transportation",
+        "description": "Bus fare",
+        "date": "2024-12-07"
+    },
+    {
+        "amount": 250.0,
+        "category": "Entertainment",
+        "description": "Concert tickets",
+        "date": "2024-12-08"
+    },
+    {
+        "amount": 90.0,
+        "category": "Bills",
+        "description": "Internet bill",
+        "date": "2024-12-09"
+    },
+    {
+        "amount": 30.0,
+        "category": "Food",
+        "description": "Snacks and coffee",
+        "date": "2024-12-10"
+    }
+]

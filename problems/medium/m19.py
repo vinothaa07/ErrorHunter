@@ -1,1 +1,0 @@
-'''Convert a binary number (given as input) to its decimal equivalent'''
