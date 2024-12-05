@@ -1,8 +1,7 @@
 # Menu driven program to calculate perimeter and area of different shapes
 
-
 def per_circle(radius):
-    perimeter = 3.14 * radius  # Bug: Missing multiplication by 2
+    perimeter = 3.14 * radius   
     print("Perimeter of Circle: ", perimeters)  
 
 def per_triangle(side1, side2, side3):
