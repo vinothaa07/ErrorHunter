@@ -1,0 +1,1 @@
+# Vowel or Consonant: Accept a character and use a switch case to determine if it is a vowel or a consonant.

@@ -1,0 +1,1 @@
+# Sum of Digits: Write a program to calculate the sum of digits of a number using a while loop.
