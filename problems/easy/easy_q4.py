@@ -5,7 +5,7 @@ def check_number(num):
     elif num > 0:
         print("Positive")  
     else:
-        print("Number is zero")   
+        print(" zero")   
         
 if __name__ == "__main__":
     num = int(input("Enter the Number : "))

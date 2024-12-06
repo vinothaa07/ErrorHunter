@@ -17,3 +17,7 @@ def array_operations_menu():
         print("Sorted Array:", arr) 
     else:
         print("Invalid option")
+
+
+if __name__ == "__main__":
+    array_operations_menu()
