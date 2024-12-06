@@ -34,6 +34,12 @@ print("-------------Mathematical Operation Menu---------------")
     a=int(input("Enter first numbers: "))
     b=int(input("Enter second numbers: "))
 
+ 
+    if choice == 2:
+        print("Subtraction:", a - b)   
+    elif choice == 1:
+        print("Addition:", a + b)   
+ 
     if choice == 1:
  
         print(f"Addition of {a} and {b} : {a + b}")   
@@ -57,6 +63,7 @@ math_operations_menu()
         print("Subtraction:", a - b)   
     elif choice == 1:
         print("Addition:", a + b)   
+ 
     elif choice == 4:
         print("Division:", a / b)   
     elif choice == 3:
@@ -82,6 +89,10 @@ math_operations_menu()
         print(f"{a} to the power of {b} : {a**b}")
     else:
         print("Invalid option")
+ 
+
+math_operations_menu()
+ 
 math_operations_menu()
  
         print("Invalid option!!!")
@@ -117,6 +128,7 @@ print("6. Expontential")
 choice = int(input("Enter your choice: "))
 math_operations_menu(choice)
 print("-------------------------------------------------------")
+ 
  
  
  

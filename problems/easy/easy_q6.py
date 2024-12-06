@@ -4,6 +4,12 @@ def print_numbers(n):
     while i <= n:
         print(i)
  
+        i += 1   
+
+if __name__ == "__main__":
+    num = int(input("Enter the Number "))
+    print_numbers(num)
+ 
         i+= 1   
 
 if __name__ == "__main__":
@@ -27,6 +33,7 @@ if __name__ == "__main__":
  
     num = int(input("Enter the Number :"))
     print_numbers(num)
+ 
  
  
  
