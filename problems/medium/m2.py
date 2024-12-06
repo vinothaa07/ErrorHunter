@@ -15,7 +15,15 @@ def array_operations_menu():
         print("Smallest Element:", min(arr))   
     elif choice == 4:
         arr.sort()
+ 
         print("Sorted Array:", arr) 
     else:
         print("Invalid option")
 array_operations_menu()
+ 
+        print("Sorted Array:",arr) 
+    else:
+        print("Invalid option")
+array_operations_menu()
+       
+ 
