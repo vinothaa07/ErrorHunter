@@ -1,6 +1,7 @@
 # Print Last Character of String
 def last_char_of_string(s):
-    return s[-2]  # Bug: Fetches second-to-last character instead of last
+    return s[-1]  
 if __name__ == "__main__":
- # Handle the input  by Yourself
- last_char_of_string()
+    n=input("Enter a string:")
+    a=last_char_of_string(n)
+    print("The last character of string is:",a)
