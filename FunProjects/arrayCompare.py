@@ -14,14 +14,14 @@ def comp(array1, array2):
     if array1 is None and array2 is not None: 
         print("The two arrays are not same ") 
         return False
-    elif(sorted(array1) == sorted([i ** 2 for i in array2])) or (sorted(array2) == sorted([i ** 2 for i in array1])):
-        print("The two arrays are same or the elements of the first array is the square of the elements of the second array")  
+      
+     
+    if (sorted(array1) == sorted([i ** 2 for i in array2])) and (sorted(array2) == sorted([i ** 2 for i in array1])):  
         return True
     else:
         pass
       
-    
+    return False
   
-a=[1,2,3,4]
-b=[1,4,9,16]
-comp(a,b)
+ 
+comp([1,2,3,4], [1,4,9,16])
