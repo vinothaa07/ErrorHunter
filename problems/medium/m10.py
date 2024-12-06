@@ -31,4 +31,8 @@ def game_menu():
             break
         else:
             print("Invalid Choice")
-game_menu()
+x=input("Can we play some games?? (type yes and no)")
+if x=="yes":
+    game_menu()
+else:
+    print("Okey , let's play later!")
