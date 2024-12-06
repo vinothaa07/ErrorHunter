@@ -8,7 +8,7 @@ def math_operations_menu():
     print("3. Multiply")
     print("4. Divide")
     print("5. Modulo")
-    choice = int(input("Enter your choice:  "))
+    choice = int(input("Enter your choice: "))
 
     a, b = map(int, input("Enter two numbers: ").split(','))
 
