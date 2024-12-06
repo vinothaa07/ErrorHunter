@@ -7,8 +7,12 @@ def grade_description(grade):
         'D': "Excellent",  
         'F': "Fail"
     }
+    if g== "A":
+        PRIN
     return switch.get(grade, "Not a valid grade") 
 if __name__ == "__main__":
     rs = grade_description('Z')
     print(rs)
+g=input("Enter a grade:")
+grade_description(g)
     
