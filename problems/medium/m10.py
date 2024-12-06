@@ -22,7 +22,7 @@ def game_menu():
             if user_choice == computer_choice:
                 print("You Lose!")   
             else:
-                print("Computer Wins!")
+                print("You Wins!")
         elif choice == 3:
             dice = random.randint(1, 8)  
             print("Dice rolled:", dice)
@@ -31,8 +31,13 @@ def game_menu():
             break
         else:
             print("Invalid Choice")
+ 
 x=input("Can we play some games?? (type yes and no)")
 if x=="yes":
     game_menu()
 else:
     print("Okey , let's play later!")
+ 
+
+game_menu()
+ 
