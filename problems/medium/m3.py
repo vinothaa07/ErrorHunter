@@ -4,26 +4,29 @@ def string_manipulation_menu():
     print("3. Check Palindrome")
     print("4. Replace Substring")
     choice = int(input("Enter your choice: "))
-
-    s = input("Enter a string: ")
-
     if choice == 1:
+        s = str(input("Enter a string: "))
         vowels = "aeiouAEIOU"
         count = 0
         for char in s:
             if char in vowels:
-                count -= 1 
+                count += 1 
         print("Number of Vowels:", count)
     elif choice == 2:
-        print("Reversed String:", s[1::-1])  
+        s = str(input("Enter a string: "))
+        print("Reversed String:", s[::-1])  
     elif choice == 3:
+        s = str(input("Enter a string: "))
         if s[::-1] != s:
-            print("Palindrome")  
+            print("Not a Palindrome")  
         else:
-            print("Not a Palindrome")
+            print("Palindrome")
     elif choice == 4:
+        s = str(input("Enter a string: "))
         old = input("Substring to replace: ")
         new = input("Replacement substring: ")
+        s=s.replace(old,new)
         print("Updated String:", s)   
     else:
         print("Invalid option")
+string_manipulation_menu()
