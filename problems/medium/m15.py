@@ -8,9 +8,31 @@ def Arms(a):
       e+=d
    return e
 
+<<<<<<< HEAD
+def sum(n):
+   i = count_digits(n)
+   s = 0
+   temp = n
+   while temp > 0:
+      digit = temp%10
+      temp//= 10
+      s += pow(digit,i)
+   return s
+
+
+num = 1634
+
+ 
+s = sum(num)
+
+ 
+if s == num:
+   print('Given number is an Armstrong Number')
+=======
 b=Arms(a)
 f=int(a)
 if b==f:
    print(b,"is an Armstrong Number")
+>>>>>>> 246833991f7068b3554261749a57001bddeaec6b
 else:
    print(b,"is not An Armstrong Number")
