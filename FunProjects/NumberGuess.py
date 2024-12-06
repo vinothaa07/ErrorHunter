@@ -7,18 +7,15 @@ def guess_the_number():
     
     while True:
         try:
-            guess = input("Enter your guess (1-100): ")  
+            guess = int(input("Enter your guess (1-100): "))  # Convert input to an integer
             attempts += 1
-            if guess < target:   
+            if guess < target:
                 print("Too low!")
             elif guess > target:
                 print("Too high!")
             else:
                 print(f"Congratulations! You guessed it in {attempts} attempts.")
                 break
-            if attempts > 5:   
-                target = random.randint(1, 100)
-                print("The target number has changed!")
         except ValueError:
             print("Invalid input! Please enter a valid number.")   
 
@@ -37,4 +34,5 @@ def main():
             break
         else:
             print("Invalid choice! Please enter 1 to play or 2 to exit.")   
+
 main()
