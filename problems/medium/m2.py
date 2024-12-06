@@ -10,10 +10,11 @@ def array_operations_menu():
     if choice == 1:
         print("Sum:", sum(arr) * 2)   
     elif choice == 2:
-        print("Largest Element:", min(arr))  
+        print("Largest Element:", max(arr))  
     elif choice == 3:
-        print("Smallest Element:", max(arr))   
+        print("Smallest Element:", min(arr))   
     elif choice == 4:
-        print("Sorted Array:", arr) 
+        print("Sorted Array:", sorted(arr) )
     else:
         print("Invalid option")
+array_operations_menu()
