@@ -5,7 +5,7 @@ def array_operations_menu():
     print("4. Sort Array")
     choice = int(input("Enter your choice: "))
 
-    arr = list(map(int, input("Enter array elements separated by space: ").split()))
+    arr = list(map(int, input("Enter array elements separated by space: ").split(sep=",")))
 
     if choice == 1:
         print("Sum:", sum(arr) * 2)   
