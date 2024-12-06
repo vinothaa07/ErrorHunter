@@ -9,17 +9,10 @@ def count_digits(n):
 def sum(n):
    i = count_digits(n)
    s = 0
-<<<<<<< HEAD
    temp = n
    while temp > 0:
       digit = temp%10
-      temp //= 10
-=======
-   temp=n
-   while temp > 0:
-      digit = temp%10
       temp//= 10
->>>>>>> 02784d8502651a47ee9509d1b7a54fc0fd48ff76
       s += pow(digit,i)
    return s
 
