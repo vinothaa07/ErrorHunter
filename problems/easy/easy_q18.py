@@ -7,3 +7,4 @@ if __name__ == "__main__":
  # Handle the input  by Yourself
  string=input("Enter a string:")
  last_char_of_string(string)
+ 
