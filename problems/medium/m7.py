@@ -36,4 +36,4 @@ def student_record_menu():
             else:
                 print("Invalid Choice")
 
-student_record_menu()       #function called
+student_record_menu()       #function call made
