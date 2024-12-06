@@ -4,4 +4,6 @@ def print_x_n_times(x, n):
         print(x)
 if __name__ == "__main__":
  # Handle the input  by Yourself
- print_x_n_times()
+ x=input("Enter a character:")
+ n=int(input("enter the number of times to loop:"))
+ print_x_n_times(x,n)

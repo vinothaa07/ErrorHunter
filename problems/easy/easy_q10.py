@@ -3,6 +3,13 @@ def is_palindrome(num):
     original = num
  
     reverse = 0
+ 
+    while True:
+        reverse = reverse * 10 + num % 10
+        num //= 10
+        if num != 0:
+            break 
+ 
     while num != 0:
         reverse = reverse * 10 + num % 10
         num //= 10

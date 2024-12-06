@@ -3,9 +3,15 @@ def reverse_number(num):
     rev = ''
     while num != 0:
         digit = num % 10
+ 
+        rev = rev*10+ digit   
+        num //= 10
+    return rev 
+ 
         rev = rev + str(digit)   
         num //= 10
     return int(rev)   
+ 
 if __name__ == "__main__":
     num = int(input("Enter num : "))
     res = reverse_number(num)
