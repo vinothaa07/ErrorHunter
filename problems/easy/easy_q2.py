@@ -1,9 +1,9 @@
 # Find the Largest Number: Accept two numbers and print the larger one.
 def largest_of_two(a, b):
     if a > b:
-        return a 
-    else:
         return b
+    else:
+        return a
 if __name__ == "__main__":
     num1 = int(input("Enter the First Number :"))
     num2 = int(input("Enter the Second Number :"))
