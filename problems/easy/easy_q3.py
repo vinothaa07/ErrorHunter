@@ -7,4 +7,4 @@ if __name__ == "__main__":
     
     num = int(input("Enter the number :"))
     res = is_leap_year(num)
-    print(res)
+    print("it is",res)
