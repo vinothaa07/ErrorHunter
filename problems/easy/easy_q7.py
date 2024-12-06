@@ -9,7 +9,11 @@ def sum_of_digits(num):
 
 if __name__ == "__main__":
     number = int(input("Enter the Number : "))
+<<<<<<< HEAD
     print("Sum of digits:",sum_of_digits(number))
+=======
+    print(sum_of_digits(number))
+>>>>>>> 953d0fe27f70dc1aeb5d9385731446869bfd4768
     
     
     
