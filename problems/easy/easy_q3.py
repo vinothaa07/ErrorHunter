@@ -9,8 +9,19 @@ def is_leap_year(year):
        return "Leap Year"
  
     if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:   
+ 
+ 
         return "Leap Year"   
     return "Not a Leap Year"
+ 
+        return " Leap Year"   
+    else:
+        return "not a Leap Year"
+ 
+ 
+        return "Leap Year"   
+    return "Not a Leap Year"
+ 
  
 if __name__ == "__main__":
     

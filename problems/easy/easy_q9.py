@@ -8,6 +8,9 @@ def factorial(n):
 
 if __name__ == "__main__":
     num = int(input("Enter the Number :"))
-    res=factorial(num)
-    print(res)
+ 
+    print(factorial(num))
     
+     res=factorial(num)
+    print(res)
+     
