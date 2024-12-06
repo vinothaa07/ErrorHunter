@@ -11,7 +11,7 @@ def check_number(num):
         exit()
       
 if __name__ == "__main__":
-    num = int(input("Enter the Number : "))
+    num = int(input("Enter the Number: "))
     res = check_number(num)
     print(res)
     
