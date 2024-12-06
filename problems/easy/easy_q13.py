@@ -14,8 +14,8 @@ def month_name(month):
         11: "November",
         12: "December"
     }
-    return switch[month + 1]   
+    return switch.get(month)   
 if __name__ == "__main__":
-    chooseMonthNum = float(input("Enter the Month: "))
+    chooseMonthNum = int(input("Enter the Month from 1 to 12: "))
     result = month_name(chooseMonthNum)
     print(result)

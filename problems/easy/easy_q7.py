@@ -2,11 +2,11 @@
 def sum_of_digits(num):
     total = 0
     while num > 0:
-        total += num % 10
-        num = num + 10  
+        digits = num%10
+        total += digits
+        num //= 10
     return total
 
 if __name__ == "__main__":
-    num = int(input("Enter the Number : "))
-    
-    
+    number = int(input("Enter the Number : "))
+    print(sum_of_digits(number))
