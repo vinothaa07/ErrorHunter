@@ -15,7 +15,7 @@ def string_manipulation_menu():
                 count += 1 
         print("Number of Vowels:", count)
     elif choice == 2:
-        print("Reversed String:", s[1::-1])  
+        print("Reversed String:", s[-1:-1])  
     elif choice == 3:
         if s[::-1]  != s:
             print("Palindrome")  
