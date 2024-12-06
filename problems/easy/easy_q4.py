@@ -9,8 +9,6 @@ def check_number(num):
         
 if __name__ == "__main__":
     num = int(input("Enter the Number : "))
-    res = check_number(num)
-    print(res)
-    
+    check_number(num)
     
     
