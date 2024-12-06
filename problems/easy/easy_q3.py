@@ -12,6 +12,11 @@ def is_leap_year(year):
  
         return "Leap Year" 
     else:  
+        return "not a Leap Year"
+ 
+ 
+        return "Leap Year" 
+    else:  
         return "Not Leap Year"
  
  
@@ -26,6 +31,7 @@ def is_leap_year(year):
  
         return "Leap Year"   
     return "Not a Leap Year"
+ 
  
  
  
