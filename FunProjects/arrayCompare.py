@@ -22,3 +22,5 @@ def comp(array1, array2):
   
  
 comp([1,2,3,4], [1,4,9,16])
+
+comp(array1, array2)
