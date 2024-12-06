@@ -37,3 +37,4 @@ def number_analysis_menu():
         print("Sum of Digits:", total)
     else:
         print("Invalid option")
+number_analysis_menu()
