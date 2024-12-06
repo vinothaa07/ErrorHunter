@@ -16,8 +16,10 @@ def hangman():
             for i, letter in enumerate(word):
                 if letter == guess:
                     guessed[i] = guess
+                    used_letters.add(letter)
             print("Correct! Word:", " ".join(guessed))
 
         if "_" not in guessed:
             print("Congratulations! You guessed the word!")
             break
+hangman()
