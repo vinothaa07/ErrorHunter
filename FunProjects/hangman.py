@@ -1,5 +1,5 @@
 def hangman():
-    word = "python"
+    word = "hello"
     guessed = ["_"] * len(word)
     attempts = 6
     used_letters = set()
@@ -21,3 +21,4 @@ def hangman():
         if "_" not in guessed:
             print("Congratulations! You guessed the word!")
             break
+hangman()
