@@ -12,6 +12,6 @@ def grade_system(marks):
     
 if __name__ == "__main__":
       num = int(input("Enter the Mark : "))
-      res = grade_system(num)
-      print(res)
+      grade = grade_system(num)
+      print(grade)
       
