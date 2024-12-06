@@ -12,7 +12,7 @@ def day_of_week(day):
     return switch[day]   
 if __name__ == "__main__":
     
-    xcd = day_of_week(7)
-    print(xcd)
+    a= day_of_week(7)
+    print(a)
     
     
