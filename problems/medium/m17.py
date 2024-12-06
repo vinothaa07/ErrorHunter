@@ -1,7 +1,9 @@
 '''Write a program to reverse a given list without using built-in functions'''
 def reverse_list(lst):
-    start = 0
-    end = len(lst) -1
+
+    start = -1
+    end = -len(lst) 
+
     
     
     while start < end:
