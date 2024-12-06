@@ -9,10 +9,12 @@ def day_of_week(day):
         6: "Saturday",
         7: "Sunday"
     }
-    return switch[8]   
+    if day <=7 :
+        return switch[8]
+    else:
+        print("Error occured")   
 if __name__ == "__main__":
-    
-    xcd = day_of_week(32)
-    print(xcd)
-    
+    day = int(input("Enter a number (1-7) to get the day of the week: "))
+    result = day_of_week(day)
+    print(result)
     
