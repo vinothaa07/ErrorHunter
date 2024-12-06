@@ -13,14 +13,15 @@ def math_operations_menu():
     a, b = map(int, input("Enter two numbers: ").split())
 
     if choice == 1:
-        print("Subtraction:", a - b)   
-    elif choice == 2:
         print("Addition:", a + b)   
+    elif choice == 2:
+        print("Subtraction:", a - b)   
     elif choice == 3:
-        print("Division:", a / b)   
-    elif choice == 4:
         print("Multiplication:", a * b)   
+    elif choice == 4:
+        print("Divide:", a / b)   
     elif choice == 5:
-        print("Modulo:", a // b)   
+        print("Modulo:", a % b)   
     else:
         print("Invalid option")
+math_operations_menu()
