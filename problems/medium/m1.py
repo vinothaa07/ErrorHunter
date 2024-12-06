@@ -24,3 +24,4 @@ def math_operations_menu():
         print("Modulo:", a // b)   
     else:
         print("Invalid option")
+math_operations_menu()
