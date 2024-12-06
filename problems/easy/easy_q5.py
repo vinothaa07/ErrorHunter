@@ -21,7 +21,11 @@ if __name__ == "__main__":
     elif marks >= 70:
         return "C"   
     else:
+ 
+        return "D"  
+ 
         return "F"  
+ 
     
 if __name__ == "__main__":
       num = int(input("Enter the Mark : "))
