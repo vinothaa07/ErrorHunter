@@ -9,3 +9,5 @@ if __name__ == "__main__":
     num2 = int(input("Enter the Second Number :"))
     res = largest_of_two(num1,num2)
     print(res)
+
+    
