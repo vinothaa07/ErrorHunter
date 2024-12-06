@@ -16,10 +16,8 @@ else:
  
  
 if (num % 2) != 0:
-   print("{0} is Odd".format(num))
+   print("{0} is odd".format(num))
 else:
-   print("{0} is Even".format(num))
+   print("{0} is odd".format(num))
 
-   
- 
  
