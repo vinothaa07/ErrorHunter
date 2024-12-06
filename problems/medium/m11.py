@@ -1,11 +1,19 @@
 # Menu driven program to calculate perimeter and area of different shapes
 
 def per_circle(radius):
+ 
     perimeter = 3.14 * radius   
     print("Perimeter of Circle: ", perimeter)  
 
 def per_triangle(side1, side2, side3):
     perimeter = side1 + side2 +  side3  
+ 
+    perimeter =2* 3.14 * radius   
+    print("Perimeter of Circle: ", perimeter)  
+
+def per_triangle(side1, side2, side3):
+    perimeter = side1 + side2+ side3  
+ 
     print("Perimeter of Triangle: ", perimeter)
 
 def per_rectangle(height, width):
@@ -30,7 +38,11 @@ def a_rectangle(height, width):
     print("Area of Rectangle: ", area)
 
 def a_square(side):
+ 
     area = side * side  
+ 
+    area = side *2  
+ 
     print("Area of Square: ", area)
 
 
@@ -57,7 +69,7 @@ while True:
                 per_circle(radius)   
             elif choice1 == 2:
                 radius = float(input("Enter Radius of Circle: "))
-                a_circle() 
+                a_circle(radius) 
             elif choice1 == 3:
                 break
             else:
@@ -70,13 +82,20 @@ while True:
             print("3. Exit")
             choice1 = int(input("\nEnter choice for calculations: "))
             if choice1 == 1:
+  
                 side1 = int(input("Enter length of side1: "))
                 side2 = int(input("Enter length of side2: "))
                 side3 = int(input("Enter length of side3: "))
                 per_triangle(side1, side2, side3)  
+ 
+                side1 = float(input("Enter length of side1: "))
+                side2 = float(input("Enter length of side2: "))
+                side3 = float(input("Enter length of side3: "))
+                per_triangle(side1,side2,side3)  
+ 
             elif choice1 == 2:
                 base = float(input("Enter base of triangle: "))
-                height = input("Enter height of triangle: ")  
+                height = float(input("Enter height of triangle: "))  
                 a_triangle(base, height)
             elif choice1 == 3:
                 break
@@ -90,8 +109,13 @@ while True:
             print("3. Exit")
             choice1 = int(input("\nEnter choice for calculations: "))
             if choice1 == 1:
+ 
                 height = int(input("Enter height of rectangle: "))
                 width = int(input("Enter width of rectangle: "))
+ 
+                height = float(input("Enter height of rectangle: "))
+                width = float(input("Enter width of rectangle: "))
+ 
                 per_rectangle(height,width)  
             elif choice1 == 2:
                 height = float(input("Enter height of rectangle: "))
@@ -109,10 +133,10 @@ while True:
             print("3. Exit")
             choice1 = int(input("\nEnter choice for calculations: "))
             if choice1 == 1:
-                side = int(input("Enter side of square: "))
+                side = float(input("Enter side of square: "))
                 per_square(side)
             elif choice1 == 2:
-                side = input("Enter side of square: ")   
+                side = int(input("Enter side of square: "))   
                 a_square(side)
             elif choice1 == 3:
                 break
