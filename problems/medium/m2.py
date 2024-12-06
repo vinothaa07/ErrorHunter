@@ -8,7 +8,7 @@ def array_operations_menu():
     arr = list(map(int, input("Enter array elements separated by space: ").split()))
 
     if choice == 1:
-        print("Sum:", sum(arr) * 2)   
+        print("Sum:", sum(arr) )   
     elif choice == 2:
         print("Largest Element:", min(arr))  
     elif choice == 3:
@@ -17,3 +17,4 @@ def array_operations_menu():
         print("Sorted Array:", arr) 
     else:
         print("Invalid option")
+array_operations_menu()
