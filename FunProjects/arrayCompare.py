@@ -21,5 +21,5 @@ def comp(array1, array2):
     return False
   
 lis1=eval(input("Enter list 1: "))
-lis2=eval(input("Enter list 2: ")) 
+lis2=eval(input("Enter list 2: "))
 print(comp(lis1,lis2))
