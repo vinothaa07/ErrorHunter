@@ -12,13 +12,49 @@ def number_analysis_menu():
     except ValueError:
         print("Invalid input. Please enter a number between 1 and 4.")
         return
-
+ 
     try:
         n = int(input("Enter a number: "))
     except ValueError:
         print("Invalid input. Please enter a valid integer.")
         return
+ 
+ 
+    
+    if choice > 0:
+        n = int(input("Enter a number: "))
+        if choice == 1:
+            is_prime = True
+            for i in range(2, n):  
+                if n % i == 0:
+                    print(" Not Prime")
+                    break
+            else:    
+                print("Prime")   
+        elif choice == 2:
+            factorial = 1
+            for i in range(1, n + 1):
+                factorial *= i   
+            print("Factorial:", factorial)
+        elif choice == 3:
+            fib = [0, 1]
+            for i in range(2, n + 1):
+                fib.append(fib[-1] + fib[-2])
+            print("Fibonacci Sequence:", fib[:-1])  
+        elif choice == 4:
+            total = 0
+            while n > 0:
+                total += n % 10
+                n //= 10   
+            print("Sum of Digits:", total)
+        else:
+            print("Invalid option")
+    else:
+        print("Enter a positive choice")
+        
 
+    n = int(input("Enter a number: "))
+ 
     if n < 0:
         print("Please enter a non-negative integer.")
         return
@@ -56,10 +92,17 @@ def number_analysis_menu():
         original_n = n
         while n > 0:
             total += n % 10
+ 
             n //= 10
         print(f"Sum of Digits of {original_n}: {total}")
 
 number_analysis_menu()
 
 
-
+             n //= 10   
+        print("Sum of Digits:", total)
+    else:
+        print("Invalid option")
+ 
+number_analysis_menu()
+ 
