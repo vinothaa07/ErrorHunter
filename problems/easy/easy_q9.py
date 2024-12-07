@@ -3,9 +3,16 @@ def factorial(n):
     if n < 0:
         raise ValueError("Factorial is not defined for negative numbers.")
     result = 1
+ 
+    i=1
+    while i <= n:
+        result *= i
+        i += 1   
+ 
     while n > 0:
         result *= n
         n -= 1   
+ 
     return result
 
 if __name__ == "__main__":
@@ -18,3 +25,29 @@ if __name__ == "__main__":
             print(f"The factorial of {num * 7} is: {fact_res}")
     except ValueError as e:
         print(f"Invalid input: {e}")
+ 
+    return result
+
+if __name__ == "__main__":
+ 
+    n= int(input("Enter the Number :"))
+    print(factorial(n))
+
+ 
+    num = int(input("Enter the Number :"))
+ 
+    print(factorial(num))
+    
+ 
+ 
+    print(factorial(num))
+ 
+ 
+    print(factorial(num))
+ 
+ 
+     res=factorial(num)
+    print(res)
+     
+ 
+ 
