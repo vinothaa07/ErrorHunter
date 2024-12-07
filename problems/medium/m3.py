@@ -15,10 +15,16 @@ def string_manipulation_menu():
                 count += 1 
         print("Number of Vowels:", count)
     elif choice == 2:
+ 
+        print("Reversed String:", s[-1:-1])  
+    elif choice == 3:
+        if s[::-1]  != s:
+ 
         print("Reversed String:", s[::-1])  
     elif choice == 3:
         str2=input("Enter another word: ")
         if s[::-1] == str2:
+ 
             print("Palindrome")  
         else:
             print("Not a Palindrome")
@@ -33,4 +39,9 @@ def string_manipulation_menu():
  
     else:
         print("Invalid option")
+ 
 string_manipulation_menu()
+
+ 
+string_manipulation_menu()
+ 
