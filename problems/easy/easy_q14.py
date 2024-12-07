@@ -8,6 +8,7 @@ def vowel_or_consonant(char):
         'o': "Vowel",
         'u': "Vowel",
     }
+ 
     return switch.get(char, "constant")   
 if __name__ == "__main__":
     character_input = input("Enter a character: ").strip()
@@ -18,3 +19,19 @@ if __name__ == "__main__":
         print("Invalid")
 
     
+ 
+ 
+    return switch.get(char,"Consonant")   
+if __name__ == "__main__":
+    characterInput  = input("Enter the character : ")
+ 
+ 
+    return switch.get(char, "consonants")   
+if __name__ == "__main__":
+    characterInput  = (input("Enter the charactrer : "))
+ 
+    res = vowel_or_consonant(characterInput)
+    print(res)
+ 
+ 
+ 

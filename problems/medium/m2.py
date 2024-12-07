@@ -3,9 +3,11 @@ def array_operations_menu():
     print("2. Largest Element")
     print("3. Smallest Element")
     print("4. Sort Array")
+
     choice = int(input("Enter your choice: "))
 
 
+ 
     arr = []
     n = int(input("Enter the number of elements in the array: "))
     for i in range(n):
@@ -23,3 +25,4 @@ def array_operations_menu():
     else:
         print("Invalid option")
 array_operations_menu()
+ 

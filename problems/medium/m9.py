@@ -12,6 +12,7 @@ def set_operations_menu():
         set2 = set(input("Enter elements of Set 2 separated by space: ").split())
 
         if choice == 1:
+ 
             print("Union:", set1 | set2)  # Corrected union calculation using |
         elif choice == 2:
             print("Intersection:", set1 & set2)  # Corrected intersection calculation using &
@@ -19,6 +20,15 @@ def set_operations_menu():
             print("Difference:", set1 - set2)  # Corrected difference calculation using -
         elif choice == 4:
             if set1.issubset(set2):  # Corrected subset check
+ 
+            print("Union:", set1 | set2)  
+        elif choice == 2:
+            print("Intersection:", set1 & set2)  
+        elif choice == 3:
+            print("Difference:", set1 - set2)   
+        elif choice == 4:
+            if set1 >= set2:  
+ 
                 print("Set 1 is a subset of Set 2")
             else:
                 print("Set 1 is not a subset of Set 2")
@@ -27,6 +37,9 @@ def set_operations_menu():
             break
         else:
             print("Invalid Choice")
-
+ 
+ 
 # Calling the function to run
 set_operations_menu()
+ 
+ 

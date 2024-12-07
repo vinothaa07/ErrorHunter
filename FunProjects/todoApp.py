@@ -7,16 +7,40 @@ class TodoList:
         print(f"Task '{task}' added.")
 
     def remove_task(self, task):
-        self.tasks.remove(task)
-        print(f"Task '{task}' removed.")
+ 
+        if r in self.tasks:
+            self.tasks.remove(task)
+            print(f"Task '{task}' removed.")
+        else:
+            print("Couldn't find the task")
+ 
+        if task in self.tasks:
+            self.tasks.remove(task)
+            print(f"Task '{task}' removed.")
+        else:
+ 
+            print("The task was not found")
+ 
+            print(f"task'{task}'not found in the list")
+ 
 
+ 
     def display_tasks(self):
-        for task in self.tasks:
-            print(f"- {task}")
+        if self.tasks:
+            print("your task:")
+            for task in self.tasks:
+                print(f"- {task}")
+        else:
+            print("no task in the list")
 
  
 todo = TodoList()
-todo.add_task("Complete Python project")
-todo.add_task("Read a book")
+n=int(input("Enter no. of tasks to add:"))
+for i in range(n):
+    t=input("Enter the task to add:")
+    todo.add_task(t)
 todo.display_tasks()
-todo.remove_task("Exercise")  
+r=input("Enter a task to remove:")
+todo.remove_task(r)
+
+
