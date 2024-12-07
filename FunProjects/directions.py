@@ -4,7 +4,13 @@
 For example: The directions [“NORTH”, “SOUTH”, “SOUTH”, “EAST”, “WEST”, “NORTH”, “WEST”] should be reduced to [“WEST”]. This is because going “NORTH” and then immediately “SOUTH” means coming back to the same place. So we cancel them and we have [“SOUTH”, “EAST”, “WEST”, “NORTH”, “WEST”]. Next, we go “SOUTH”, take “EAST” and then immediately take “WEST”, which again means coming back to the same point. Hence we cancel “EAST” and “WEST” to giving us [“SOUTH”, “NORTH”, “WEST”]. It’s clear that “SOUTH” and “NORTH” are opposites hence canceled and finally we are left with [“WEST”].
 '''
 
+ 
+def reduce_dir(dt):
+
+ 
+ 
 def reduce_dir(directions):
+ 
     opposite = {
         "EAST":  "WEST",
         "WEST":  "EAST",
@@ -13,6 +19,13 @@ def reduce_dir(directions):
      
     }
     stack = []
+ 
+
+    for d in dt:
+        if stack and opposite[d] == stack[-1]:
+            stack.pop()
+        else:
+ 
     for d in directions:
         if stack and opposite[d] == stack[-1]:
  
@@ -25,6 +38,7 @@ def reduce_dir(directions):
           stack.pop()
  
         else:
+ 
  
             stack.append(d)
     print(stack)
@@ -45,6 +59,9 @@ reduce_dir(dir)
     return stack
 
 directions = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
+ 
+print(reduce_dir(directions))
+ 
 result = reduce_dir(directions)
 print(result)
  
