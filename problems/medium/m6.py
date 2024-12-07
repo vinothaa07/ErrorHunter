@@ -26,3 +26,4 @@ def file_handling_menu():
             f.write(data)
     else:
         print("Invalid option")
+        
