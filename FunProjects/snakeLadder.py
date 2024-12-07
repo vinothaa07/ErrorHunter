@@ -2,12 +2,8 @@ import random
 
 def snake_and_ladder():
     position = 0
-    snakes = {25: 10, 40: 5, 90: 48}  # Snake positions
-    ladders = {3: 22, 50: 75, 70: 89}  # Ladder positions
-
-    for key in list(snakes.keys()):
-        if key in ladders:
-            del snakes[key]
+    snakes = {25: 10, 40: 5, 90: 48} 
+    ladders = {3: 22, 50: 75, 70: 89}  
     position = 0
     moves = 0
 
