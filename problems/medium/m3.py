@@ -17,7 +17,8 @@ def string_manipulation_menu():
     elif choice == 2:
         print("Reversed String:", s[::-1])  
     elif choice == 3:
-        if s[::-1] == s:
+        str2=input("Enter another word: ")
+        if s[::-1] == str2:
             print("Palindrome")  
         else:
             print("Not a Palindrome")

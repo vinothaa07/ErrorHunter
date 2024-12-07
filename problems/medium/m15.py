@@ -1,16 +1,13 @@
 '''Write a program to check if a number is an Armstrong number (e.g., 153  = 1^3 + 5^3 + 3^3 ) .'''
-a=input("Enter Number:")
-def Arms(a):
-   e=0
-   for i in a:
-      c=int(i)
-      d=c*c*c
-      e+=d
-   return e
 
-b=Arms(a)
-f=int(a)
-if b==f:
-   print(b,"is an Armstrong Number")
-else:
-   print(b,"is not An Armstrong Number")
+n=input("Enter Number:")
+c=0
+def arm(n):
+   for i in n:
+      c+=int(i)**len(n)
+   if c==int(n):
+      print("It is Armstrong number")
+   else:
+      print("It is not Armstrong Number")
+
+arm(n)
