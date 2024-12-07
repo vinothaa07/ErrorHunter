@@ -16,7 +16,15 @@ def array_operations_menu():
 
     if choice == 1:
  
+ 
         print("Sum:", sum(arr) * 2)   
+ 
+ 
+        print("Sum:", sum(arr) )   
+ 
+        print("Sum:", sum(arr))   
+ 
+ 
  
         print("Sum:", sum(arr))  
  
@@ -32,7 +40,25 @@ def array_operations_menu():
  
         print("Smallest Element:", min(arr))  
     elif choice == 4:
+ 
+ 
+        print("Sorted Array:",sorted.arr) 
+    else:
+        print("Invalid option")
+
+array_operations_menu()
+ 
+        arr.sort()
+ 
+        print("Sorted Array:", arr) 
+    else:
+        print("Invalid option")
+array_operations_menu()
+ 
+        print("Sorted Array:",arr) 
+ 
         print("Sorted Array:", sorted(arr))  
+ 
     else:
         print("Invalid option")
 array_operations_menu()
