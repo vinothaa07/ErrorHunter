@@ -1,4 +1,15 @@
 # Print Last Character of String
+ 
+def last_string(s):
+    return s[-1]
+
+if __name__ == "__main__":
+    s = input("Enter a string: ")
+    if s:
+        print("The last character is:", last_string(s))
+    else:
+        print("The string is empty.")
+ 
 def last_char_of_string(s):
  
     return s[-1]  # Bug: Fetches second-to-last character instead of last
@@ -44,5 +55,6 @@ if __name__ == "__main__":
  
      s=[7,8,9,6]
      print( last_char_of_string(s))
+ 
  
  

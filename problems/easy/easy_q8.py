@@ -13,6 +13,7 @@ def reverse_number(num):
     while num != 0:
  
         digit = num % 10
+ 
         rev = rev*10 + digit   
  
         num //= 10
@@ -21,9 +22,8 @@ def reverse_number(num):
  
  
  
+ 
 if __name__ == "__main__":
     num = int(input("Enter num : "))    #123
     res = reverse_number(num)
     print(res)
-
- 

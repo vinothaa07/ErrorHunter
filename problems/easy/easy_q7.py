@@ -6,13 +6,17 @@ def sum_of_digits(num):
  
  
         total += num % 10
+ 
+ 
         num //= 10  
+ 
  
     return total
 
 if __name__ == "__main__":
  
     num = int(input("Enter the Number : "))
+ 
  
     res=sum_of_digits(num)
     print(res)    
@@ -36,4 +40,5 @@ if __name__ == "__main__":
         print(f"The sum of digits is: {result}")
     except ValueError:
         print("Invalid input. Please enter an integer.")
+ 
  

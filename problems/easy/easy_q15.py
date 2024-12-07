@@ -11,7 +11,14 @@ def grade_description(grade):
  
  
     }
-  
+ 
+    return switch.get(grade, "Not a valid grade") 
+
+if __name__ == "__main__":
+    alp = input("Enter a grade: ").upper()
+    rs = grade_description(alp)
+    print(rs)
+ 
 if __name__ == "__main__":
  
     grade = grade_description('Z')
@@ -20,5 +27,4 @@ if __name__ == "__main__":
  
     rs = grade_description('Z')
     print(rs)
- 
  

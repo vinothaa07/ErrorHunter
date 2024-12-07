@@ -11,10 +11,12 @@ def print_numbers(num):
     while i <=num:
         print(i)
  
+ 
         i+=1  
  
  
         i += 1
+ 
 
 if __name__ == "__main__":
     num = int(input("Enter the Number :"))

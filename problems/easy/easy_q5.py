@@ -1,5 +1,7 @@
 def grade_system(marks):
  
+ 
+ 
     if marks>=90:
         return "A"  
     elif 80<= marks>90:
@@ -16,6 +18,7 @@ def grade_system(marks):
         return "C"   
     else:
         return "D"  
+ 
     
 if __name__ == "__main__":
  
