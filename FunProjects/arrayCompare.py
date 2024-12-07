@@ -11,12 +11,15 @@ Consider two arrays a and b.
 def comp(array1, array2): 
       
    
-    if array1 is None and array2 is not None:  
+    if array1 is None and array2 is not None: 
+        print("The two arrays are not same ") 
         return False
       
      
     if (sorted(array1) == sorted([i ** 2 for i in array2])) and (sorted(array2) == sorted([i ** 2 for i in array1])):  
         return True
+    else:
+        pass
       
     return False
   

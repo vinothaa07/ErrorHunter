@@ -16,12 +16,13 @@ class Library:
             print(f"You borrowed '{title}'.")
 
     def return_book(self, title):
-        if self.books[title]["available"] == True:
+        if  title not in self.books:
+           print(f"'{title}' is not in the library.")
+        elif self.books[title]["available"] == True:
             print(f"'{title}' was not borrowed.")
         else:
             self.books[title]["available"] = True
-            print(f"You returned '{title}'.")
-
+            print(f"You returned '{title}'")
     def display_books(self):
         for title, details in self.books.items():
             status = "Available" if details["available"] else "Not Available"
