@@ -11,15 +11,17 @@ Consider two arrays a and b.
 def comp(array1, array2): 
       
    
-    if array1 is None and array2 is not None:  
+    if array1 is None and array2 is not None: 
+        print("The two arrays are not same ") 
         return False
       
      
-    if (sorted(array1) == sorted([i ** 2 for i in array2])) or (sorted(array2) == sorted([i ** 2 for i in array1])):  
+    if (sorted(array1) == sorted([i ** 2 for i in array2])) and (sorted(array2) == sorted([i ** 2 for i in array1])):  
         return True
+    else:
+        pass
       
     return False
   
-lis1=eval(input("Enter list 1: "))
-lis2=eval(input("Enter list 2: "))
-print(comp(lis1,lis2))
+ 
+comp([1,2,3,4], [1,4,9,16])
