@@ -8,10 +8,11 @@ def grade_system(marks):
     elif marks >= 70:
         return "C"   
     else:
+ 
         return "D"  
+ 
     
 if __name__ == "__main__":
-      num =int(input("Enter the Mark : "))
+      num = int(input("Enter the Mark : "))
       res = grade_system(num)
       print(res)
-      
