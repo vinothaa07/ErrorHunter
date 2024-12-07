@@ -2,13 +2,42 @@ import random
 
 def snake_and_ladder():
     position = 0
+    snakes = {25: 10, 40: 5, 90: 48}  # Snake positions
+    ladders = {3: 22, 50: 75, 70: 89}  # Ladder positions
+
+    for key in list(snakes.keys()):
+        if key in ladders:
+            del snakes[key]
+    position = 0
+    moves = 0
+
+    print("Starting the game of Snake and Ladder!")
+    print(f"snakes: {snakes}")
+    print(f"Ladders: {ladders}")
+
     while position != 100:
+        input("Press Enter to roll the dice...")
         dice = random.randint(1, 6)
+        print(f"\nYou rolled: {dice}")
+       
+        
+        # Check if the dice roll exceeds 100
+        if position + dice > 100:
+            print(f"Cannot move. Current Position: {position}")
+            continue
+
         position += dice
-        if position == 50:  # Climbing a ladder
-            position = 75
-        elif position == 25:  # Snake bite
-            position = 10
-        print(f"Dice: {dice}, Position: {position}")
+        
+        # Check for snakes or ladders
+        if position in snakes:
+            print(f"Oops! Snake bite at {position}. Sliding down to {snakes[position]}")
+            position = snakes[position]
+        elif position in ladders:
+            print(f"Yay! Ladder at {position}. Climbing up to {ladders[position]}")
+            position = ladders[position]
+
+        print(f"Current Position: {position}")
+    
+    print("\nCongratulations! You reached position 100 and won the game!")
 
 snake_and_ladder()
