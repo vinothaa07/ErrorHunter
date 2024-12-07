@@ -4,6 +4,11 @@ def print_x_n_times(n):
     for i in range(0, n):  # Bug: Loop runs one less time than expected
         print("x")
 if __name__ == "__main__":
+ 
+ x=input("Enter the character to print :")
+ n=int(input("Enter the number of times to print :"))
+ print_x_n_times(x,n)
+ 
  # Handle the input  by Yourself
  num=int (input(" Enter a N times :"))
  print_x_n_times(num)
@@ -20,4 +25,5 @@ if __name__ == "__main__":
  n=int(input("enter the number of times to loop:"))
  
  print_x_n_times(x,n)
+ 
  

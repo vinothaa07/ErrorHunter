@@ -15,6 +15,9 @@ if __name__ == "__main__":
 
  
         total += num % 10
+ 
+        num //=10 
+ 
          num = num//10  
  
  
@@ -22,15 +25,17 @@ if __name__ == "__main__":
  
         num //= 10  
   
+ 
     return total
 
 if __name__ == "__main__":
     num = int(input("Enter the Number : "))
+ 
+    print("The sum of the number is :",sum_of_digits(num))
+ 
      print(sum_of_digits(num))
  
     res=sum_of_digits(num)
     print(res)
- 
-    
  
   

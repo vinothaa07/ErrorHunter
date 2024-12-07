@@ -22,6 +22,8 @@ if __name__ == "__main__":
         return "C"   
     else:
  
+        return "D"  
+ 
         return "F"  
  
  
@@ -30,7 +32,6 @@ if __name__ == "__main__":
         return "F"  
  
  
-    
 if __name__ == "__main__":
       num = int(input("Enter the Mark : "))
       res = grade_system(num)
