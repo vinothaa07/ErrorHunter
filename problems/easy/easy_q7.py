@@ -9,8 +9,13 @@ def sum_of_digits(num):
     return total
 
 if __name__ == "__main__":
+ 
+    num = int(input("Enter the Number : "))
+    print("sum of digits:",sum_of_digits(num))
+ 
     num1 = int(input("Enter the Number : "))
     print(sum_of_digits(num1))
+ 
     
     
  

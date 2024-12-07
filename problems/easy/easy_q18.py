@@ -3,6 +3,16 @@ def last_char_of_string(s):
  
     return s[-1]  # Bug: Fetches second-to-last character instead of last
 if __name__ == "__main__":
+   string=input("enter the string:")
+   if string:
+      print("the last character of the string:",last_char_of_string(string))
+   else:
+      print("invalid")
+ 
+ 
+ 
+    return s[-1]  # Bug: Fetches second-to-last character instead of last
+if __name__ == "__main__":
  # Handle the input  by Yourself
  str=input("Enter the string :")
 last_str= last_char_of_string(str)
@@ -34,4 +44,5 @@ if __name__ == "__main__":
  
      s=[7,8,9,6]
      print( last_char_of_string(s))
+ 
  

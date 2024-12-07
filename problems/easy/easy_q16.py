@@ -4,6 +4,9 @@ def sum_first_last(arr):
 if __name__ == "__main__":
     # Handle the input  by Yourself
  
+    arr=int()
+    sum_first_last()
+ 
     arr=[]
     n=int(input("Enter the Total number of Elements:"))
     for i in range(n):
@@ -13,3 +16,4 @@ if __name__ == "__main__":
     arr=[2,5,8,7,6]
  
     print(sum_first_last(arr))
+ 

@@ -9,6 +9,7 @@ def math_operations_menu():
     print("3. Multiply")
     print("4. Divide")
     print("5. Modulo")
+    
     choice = int(input("Enter your choice: "))
  
 
@@ -16,6 +17,28 @@ def math_operations_menu():
     a=int(input("enter first number:"))
     b=int(input("enter second number:"))
 
+ 
+    if choice == 1:
+        print("Addition:", a + b)  
+    elif choice == 2:
+        print("Subtraction:", a - b)  
+    elif choice == 3:
+        print("Multiplication:", a * b)  
+    elif choice == 4:
+        if b != 0:  
+            print("Division:", a / b)
+        else:
+            print("Error.")
+    elif choice == 5:
+        if b != 0: 
+            print("Modulo:", a % b)
+        else:
+            print("Error")
+    else:
+        print("Invalid option")
+        
+math_operations_menu()
+ 
     if choice == 2:
         print("Subtraction:", a - b)   
     elif choice == 1:
@@ -67,3 +90,4 @@ math_operations_menu()
  
 
   
+ 

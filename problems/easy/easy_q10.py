@@ -7,7 +7,14 @@ def is_palindrome(num):
     while True:
         reverse = reverse * 10 + num % 10
         num //= 10
+        if num==0:
+ 
+ 
+    while True:
+        reverse = reverse * 10 + num % 10
+        num //= 10
         if num == 0:
+ 
             break
     return reverse == original
 
@@ -41,9 +48,13 @@ def is_palindrome(num):
 if __name__ == "__main__":
     nums = int(input("Enter the Number: "))
     res = is_palindrome(nums)
+ 
+    if res:
+        print("its palindrome")
+    else:
+        print("its not palindrome")
+ 
     print(res)
 
-
-
-
+ 
 
