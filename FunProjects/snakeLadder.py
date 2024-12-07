@@ -18,6 +18,11 @@ def snake_and_ladder():
         input("Press Enter to roll the dice...")
  
         dice = random.randint(1, 6)
+ 
+        if position + dice <= 100:  
+            position += dice
+        if position == 50:  
+ 
         print(f"\nYou rolled: {dice}")
        
         
@@ -32,10 +37,17 @@ def snake_and_ladder():
             print("You won the game!!")
             break
         elif position == 50:  # Climbing a ladder
+ 
             position = 75
-        elif position == 25:  # Snake bite
+        elif position == 25:  
             position = 10
+            
+           
         print(f"Dice: {dice}, Position: {position}")
+ 
+        if position == 100:
+            print("You won!!")
+ 
     else:
         print("You  are in the 100 th place YOU won the game" )
  
@@ -47,7 +59,7 @@ def snake_and_ladder():
         elif position in ladders:
             print(f"Yay! Ladder at {position}. Climbing up to {ladders[position]}")
             position = ladders[position]
-
+ 
         print(f"Current Position: {position}")
     
     print("\nCongratulations! You reached position 100 and won the game!")
