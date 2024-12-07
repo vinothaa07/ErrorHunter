@@ -7,7 +7,7 @@ def largest_of_two(a, b):
 if __name__=="__main__":
     a = int(input("Enter the First Number :"))
     b = int(input("Enter the Second Number :"))
-    res = largest_of_two(a,b)
+    res = largest_of_two(a,b) 
  
  
  
