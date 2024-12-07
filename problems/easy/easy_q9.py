@@ -22,6 +22,10 @@ if __name__ == "__main__":
     num = int(input("Enter the Number :"))
  
     print(factorial(num))
+    
+ 
+ 
+    print(factorial(num))
  
  
     print(factorial(num))
@@ -30,3 +34,4 @@ if __name__ == "__main__":
      res=factorial(num)
     print(res)
      
+ 

@@ -10,10 +10,17 @@ def day_of_week(day):
         7: "Sunday"
     }
  
+    return switch.get(day)   
+if __name__ == "__main__":
+    n=int(input("enter the number:"))
+    xcd = day_of_week(n)
+ 
+ 
     return switch.get(day)
 if __name__ == "__main__":
     day=int(input("Enter day number:"))
     xcd = day_of_week(day)
+ 
     print(xcd)
  
     
