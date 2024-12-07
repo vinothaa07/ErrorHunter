@@ -1,6 +1,7 @@
 import random
 
 def game_menu():
+ 
         while True:
             print("\n1. Number Guessing Game")
             print("2. Rock-Paper-Scissors")
@@ -32,3 +33,6 @@ def game_menu():
             else:
                 print("Invalid Choice")
 game_menu()
+ 
+ 
+  
