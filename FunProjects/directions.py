@@ -19,18 +19,12 @@ def reduce_dir(directions):
     
     for d in directions:
         if stack and opposite[d] == stack[-1]:
-          
-             
-          
-            stack.pop()
-            stack.pop()
-            stack.pop()
+          stack.pop()
         else:
-          
-     
             stack.append(d)
-    
+    print(stack)
     return stack
 
-directions = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
+dir = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
+reduce_dir(dir)
  
