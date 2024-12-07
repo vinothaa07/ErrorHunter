@@ -36,3 +36,4 @@ def matrix_operations_menu():
         print("Transpose:", transpose)
     else:
         print("Invalid option")
+matrix_operations_menu()

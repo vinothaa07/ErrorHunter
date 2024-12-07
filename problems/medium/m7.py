@@ -16,7 +16,7 @@ def student_record_menu():
             students[roll] = (name, marks)     
         elif choice == 2:
             for roll, details in students.items():
-                print(f"Roll: {details[0]}, Name: {details[0]}, Marks: {details[1]}")  
+ 
         elif choice == 3:
             roll = input("Enter Roll Number to Search: ")
             if roll in students:

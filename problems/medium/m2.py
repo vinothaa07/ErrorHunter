@@ -33,6 +33,13 @@ def array_operations_menu():
         print("Largest Element:", max(arr))  
     elif choice == 3:
  
+        print("Smallest Element:", min(arr))   
+    elif choice == 4:
+        print("Sorted Array:", sorted(arr) )
+    else:
+        print("Invalid option")
+array_operations_menu()
+ 
         print("Smallest Element:", min(arr))  
     elif choice == 4:
  
@@ -42,4 +49,4 @@ def array_operations_menu():
         print("Invalid option")
 
 array_operations_menu()
-  
+   

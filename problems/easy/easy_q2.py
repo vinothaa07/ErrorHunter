@@ -27,6 +27,7 @@ if __name__ == "__main__":
     print(res)
  
     res = largest_of_two(num1,num1)
+ 
     print(res)
 largest_of_two()
  
@@ -37,8 +38,6 @@ if __name__=="__main__":
     a = int(input("Enter the First Number :"))
     b = int(input("Enter the Second Number :"))
     res = largest_of_two(a,b) 
- 
- 
  
  
  

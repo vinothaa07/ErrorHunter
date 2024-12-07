@@ -29,5 +29,8 @@ def math_operations_menu():
     else:
         print("Invalid option")
  
+def math_operations_menu()
+ 
+ 
 math_operations_menu()
  
