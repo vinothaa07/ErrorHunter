@@ -17,16 +17,27 @@ def array_operations_menu():
     if choice == 1:
  
  
+        print("Sum:", sum(arr) * 2)   
+ 
+ 
         print("Sum:", sum(arr) )   
  
         print("Sum:", sum(arr))   
  
  
+ 
         print("Sum:", sum(arr))  
  
     elif choice == 2:
-        print("Largest Element:", max(arr))  
+        print("Largest Element:", min(arr))  
     elif choice == 3:
+ 
+        print("Smallest Element:", max(arr))   
+    elif choice == 4:
+        print("Sorted Array:", arr) 
+    else:
+        print("Invalid option")
+ 
         print("Smallest Element:", min(arr))  
     elif choice == 4:
  
