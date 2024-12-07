@@ -2,42 +2,43 @@
 def largest_of_two(a, b):
     if a > b:
  
+        return a  
+    else:
+ 
+ 
         return a   
     else:
+ 
+        print(num1,"is greater")
+        return a  
+    else:
+        print(num2,"is greater")
+ 
+ 
         return b
 if __name__ == "__main__":
     num1 = int(input("Enter the First Number :"))
     num2 = int(input("Enter the Second Number :"))
+ 
     res = largest_of_two(num1,num2)
     print(res)
  
-        print(num1,"larger")
-    else:
-        print(num2,"larger")
-    
-if __name__ == "__main__":
-    num1 = int(input("Enter the First Number :"))
-    num2 = int(input("Enter the Second  :"))
+    res = largest_of_two(num1,num2)
+    print(res)
+ 
     res = largest_of_two(num1,num1)
     print(res)
+largest_of_two()
  
- 
-        return a 
- 
-        return a   
- 
+        print(a)
     else:
-        return b
-if __name__ == "__main__":
-    num1 = int(input("Enter the First Number :"))
-    num2 = int(input("Enter the Second Number :"))
-    res = largest_of_two(num1,num2)
-  keerthi
-    print("The Largest Number is",res)
+        print(b)
+if __name__=="__main__":
+    a = int(input("Enter the First Number :"))
+    b = int(input("Enter the Second Number :"))
+    res = largest_of_two(a,b) 
  
-    print(res)
-
-    
- main
+ 
+ 
  
  
