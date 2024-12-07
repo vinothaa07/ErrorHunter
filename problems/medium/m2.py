@@ -21,16 +21,22 @@ def array_operations_menu():
         print("Smallest Element:", min(arr))   
     elif choice == 4:
  
+ 
         print("Sorted Array:", sorted(arr)) 
     else:
         print("Invalid option")
 array_operations_menu()
  
  
+ 
         arr.sort()  # sorts the array in ascending order by default
         print("Sorted Array:", arr) 
     else:
         print("Invalid option")
+ 
+
+   
+ 
 array_operations_menu()
  
         arr.sort()
@@ -44,5 +50,4 @@ array_operations_menu()
     else:
         print("Invalid option")
 array_operations_menu()
-   
  
