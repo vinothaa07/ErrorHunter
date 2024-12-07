@@ -1,3 +1,6 @@
+
+# solve . Find the bugs and solve it
+
 def string_manipulation_menu():
     print("1. Count Vowels")
     print("2. Reverse String")
@@ -25,6 +28,12 @@ def string_manipulation_menu():
                 count += 1 
         print("Number of Vowels:", count)
     elif choice == 2:
+ 
+        print("Reversed String:", s[::-1])  
+    elif choice == 3:
+        if s[::-1] != s:
+            print("Not a Palindrome")  
+ 
  
         print("Reversed String:", s[::-1])  
     elif choice == 3:
@@ -58,10 +67,16 @@ def string_manipulation_menu():
             print("Palindrome")  
  
         else:
-            print("Not a Palindrome")
+            print("Palindrome")
     elif choice == 4:
         old = input("Substring to replace: ")
         new = input("Replacement substring: ")
+
+        print("Updated String:", new)   
+    else:
+        print("Invalid option")
+string_manipulation_menu()
+
  
         print("Updated String:", s.replace(old, new))  
     else:

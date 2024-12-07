@@ -29,6 +29,9 @@ print(comp([1, 2, 3, 4], [1, 4, 9, 16]))
         return False
       
      
+ 
+    if (sorted(array2) == sorted([i ** 2 for i in array1])) and (sorted(array2) == sorted([i ** 2 for i in array1])):  
+ 
     if (sorted(array1) == sorted([i ** 2 for i in array2])) or  (sorted(array2) == sorted([i ** 2 for i in array1])):
         print(" if the two arrays are same or the elements of the first array are the square of the elements of the second array!!  ")  
  
@@ -38,10 +41,14 @@ print(comp([1, 2, 3, 4], [1, 4, 9, 16]))
      
     if (sorted(array2) == sorted([i ** 2 for i in array1])):  
  
+ 
         return True
       
     return False
-  
+   
+ 
+ 
+print(comp([1,2,3,4], [1,4,9,16]))
  
 lis1=eval(input("Enter list 1: "))
 lis2=eval(input("Enter list 2: "))
