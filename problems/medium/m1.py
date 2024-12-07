@@ -12,25 +12,19 @@ def math_operations_menu():
     
     choice = int(input("Enter your choice: "))
  
- 
- 
+
+    a, b = map(int , input("Enter two numbers: ").split())
+
     if choice == 1:
- 
-        print("Addition:", a + b) 
+        print("addition:", a + b)
     elif choice == 2:
-        print("Subtraction:", a - b)   
+        print("subtraction:", a - b)   
     elif choice == 3:
-        print("Multiplication:", a * b)
+        print("multiply:", a * b)   
     elif choice == 4:
-        print("Division:", a / b)   
- 
-    elif choice == 5:
-        print("Modulo:", a // b)   
-    else:
-        print("Invalid option")
- 
-def math_operations_menu()
+        print("divide:", a / b)   
  
  
-math_operations_menu()
  
+ 
+  

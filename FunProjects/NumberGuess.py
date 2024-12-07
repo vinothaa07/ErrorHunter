@@ -8,7 +8,11 @@ def guess_the_number():
     while True:
         try:
  
+            guess = int(input("Enter your guess (1-100): "))  
+ 
+ 
             guess = int(input("Enter your guess (1-100): "))  # Convert input to an integer
+ 
             attempts += 1
             if guess < target:
                 print("Too low!")
@@ -29,7 +33,8 @@ def guess_the_number():
                 print(f"Congratulations! You guessed it in {attempts} attempts.")
                 break
         except ValueError:
-            print("Invalid input! Please enter a valid number.")   
+            print("Invalid input! Please enter a valid number.") 
+guess_the_number()
 
 def main():
     while True:
@@ -37,13 +42,12 @@ def main():
         print("1. Play Guess the Number")
         print("2. Exit")
         
-        choice = input("Enter your choice: ")   
+        choice = int(input("Enter your choice: "))   
         
         if choice == "1":
             guess_the_number()
         elif choice == "2":
             print("Thanks for playing!")
-            break
         else:
             print("Invalid choice! Please enter 1 to play or 2 to exit.")   
 

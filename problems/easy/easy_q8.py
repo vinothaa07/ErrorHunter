@@ -1,20 +1,22 @@
  # Reverse a Number: Accept a number and print its reverse using a while loop.
 def reverse_number(num):
  
+    rev = 0
+    revs=reversed(num)
+    for x in revs:
+        print(x)
+        digit = num % 10
+        rev+=digit   
+ 
+ 
     rev = ""
     while num != 0:
  
         digit = num % 10
         rev = rev*10 + digit   
+ 
         num //= 10
     return rev   
- 
-  
- 
-        digit = num % 10    #digit = 123%10 = 3  12%10
-        rev = rev + str(digit)   #rev = 3
-        num //= 10      # num//= 10 = 12
-    return rev 
  
  
  
