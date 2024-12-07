@@ -13,10 +13,10 @@ def student_record_menu():
             roll = input("Enter Roll Number: ")
             name = input("Enter Name: ")
             marks = input("Enter Marks: ")
-            students[name] = (roll, marks)     
+            students[roll] = (name, marks)     
         elif choice == 2:
             for roll, details in students.items():
-                print(f"Roll: {details[0]}, Name: {roll}, Marks: {details[1]}")  
+ 
         elif choice == 3:
             roll = input("Enter Roll Number to Search: ")
             if roll in students:
