@@ -3,10 +3,13 @@ def reverse_number(num):
  
     rev = ""
     while num != 0:
+  
+ 
         digit = num % 10    #digit = 123%10 = 3  12%10
         rev = rev + str(digit)   #rev = 3
         num //= 10      # num//= 10 = 12
     return rev 
+ 
  
  
 if __name__ == "__main__":

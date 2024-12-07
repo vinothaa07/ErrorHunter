@@ -2,15 +2,21 @@
 def grade_description(grade):
     switch = {
  
-        'A': "Good",
-        'B': "Average",
-        'C': "Poor",
-        'D': "Excellent",  
-        'E': "Fail"
+        'B': "Good",
+        'C': "Average",
+        'D': "Poor",
+        'A': "Excellent",  
+        'F': "Fail"
+ 
  
     }
   
 if __name__ == "__main__":
+ 
+    grade = grade_description('Z')
+    print(grade_description(grade):)
+    
+ 
     rs = grade_description('Z')
     print(rs)
  

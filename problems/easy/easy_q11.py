@@ -9,17 +9,14 @@ def day_of_week(day):
         6: "Saturday",
         7: "Sunday"
     }
+ 
+    return switch.get(day)
+if __name__ == "__main__":
+    day=int(input("Enter day number:"))
+    xcd = day_of_week(day)
+    print(xcd)
+ 
     
     
     return switch.get(day, "Invalid day")
-
-if __name__ == "__main__":
  
-    try:
-        day = int(input("Enter a number (1-7) to get the day of the week: "))
-        
-       
-        result = day_of_week(day)
-        print(result)
-    except ValueError:
-        print("Invalid input. Please enter an integer.")

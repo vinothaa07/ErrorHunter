@@ -22,6 +22,9 @@ if __name__ == "__main__":
         return "C"   
     else:
  
+        return "F"  
+    
+ 
         return "D"  
  
         return "F"  
@@ -30,6 +33,7 @@ if __name__ == "__main__":
         return "D"  
  
         return "F"  
+ 
  
  
 if __name__ == "__main__":
