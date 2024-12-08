@@ -28,15 +28,19 @@ def main():
 def both():
     global withdraw_history 
     global deposit_history
-    d=0
-    withdraw_history.update(deposit_history)
-    for i in withdraw_history:
-        if d+1 == i:
-            print(f"{i} : {withdraw_history[i]}")
+    global result
+    d=1
+    result.update(deposit_history)
+    result.update(withdraw_history)
+    for i in range(1,len(result)+1):
+        if d in result.keys():
+            print(f"{d} : {result[d]}")
+            d+=1
             
 
 withdraw_history = {}
 deposit_history = {}
+result = {}
 count=1
 main() 
 while True:
@@ -58,25 +62,28 @@ while True:
         atm.withdraw(b)
         count+=1
     elif n==3:
-        print("----------------------------------- Transaction History -------------------")
-        print('''
-              1.Withdraw History
-              2.Deposit History
-              3.Both Withdraw and Deposit history''')
-        print("---------------------------------------------------------------------------")
-        c=int(input("Enter your choice: "))
-        if c==1:
-            print("When : How Much Amount Withdrawn")
-            for i in withdraw_history:
-                print(f"{i} : {withdraw_history[i]}")
-        elif c==2:
-            print("When : How Much Amount Depositted")
-            for i in deposit_history:
-                print(f"{i} : {deposit_history[i]}")
-        elif c==3:
-            both()
+        if withdraw_history == {} and deposit_history == {}:
+            print("###NO TRANSACTION HAS BEEN DONE###")
         else:
-            print("###INVALID CHOICE###")
+            print("----------------------------------- Transaction History -------------------")
+            print('''
+                1.Withdraw History
+                2.Deposit History
+                3.Both Withdraw and Deposit history''')
+            print("---------------------------------------------------------------------------")
+            c=int(input("Enter your choice: "))
+            if c==1:
+                print("When : How Much Amount Withdrawn")
+                for i in withdraw_history:
+                    print(f"{i} : {withdraw_history[i]}")
+            elif c==2:
+                print("When : How Much Amount Depositted")
+                for i in deposit_history:
+                    print(f"{i} : {deposit_history[i]}")
+            elif c==3:
+                both()
+            else:
+                print("###INVALID CHOICE###")
     
     elif n==4:
         print("Exiting .....")
