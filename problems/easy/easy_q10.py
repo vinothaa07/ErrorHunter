@@ -4,8 +4,11 @@ def is_palindrome(num):
  
     reverse = 0
  
+    do:
+ 
     while num != 0:
         reverse = reverse * 10 + num % 10
+ 
         num //= 10
     
     return reverse == original

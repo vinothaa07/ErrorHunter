@@ -17,8 +17,7 @@ def check_number(num):
         print("negative")  
     else:
  
- 
-        print("Number is Zero")   
+        print(" zero")   
  
  
         
@@ -34,6 +33,4 @@ if __name__ == "__main__":
  
         print("number entered is 0")   
         
- 
-    
   
