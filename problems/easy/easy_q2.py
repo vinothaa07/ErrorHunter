@@ -2,7 +2,8 @@
 def largest_of_two(a, b):
     if a > b:
  
-        return a
+        return a  
+ 
  
          
      else:
@@ -12,6 +13,15 @@ if __name__ == "__main__":
     num2 = int(input("Enter the Second Number :"))
     res = largest_of_two(num1,num2)
  
-    print(res)
+    else:
  
-   
+ 
+        print(num1,"is greater")
+        return a  
+    else:
+        print(num2,"is greater")
+ 
+ 
+ 
+        return b
+ 
