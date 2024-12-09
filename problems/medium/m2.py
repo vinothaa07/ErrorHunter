@@ -47,6 +47,10 @@ array_operations_menu()
         print("Sorted Array:",sorted.arr) 
     else:
         print("Invalid option")
-
+ 
+array_operations_menu()
+ 
+ 
 array_operations_menu()
    
+ 
