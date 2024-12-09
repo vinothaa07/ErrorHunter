@@ -7,31 +7,46 @@ def array_operations_menu():
     choice = int(input("Enter your choice: "))
 
 
-    arr = list(map(int, input("Enter array elements separated by space: ").split()))
+ 
+    arr = []
+    n = int(input("Enter the number of elements in the array: "))
+    for i in range(n):
+        element = int(input(f"Enter element {i+1}: "))
+        arr.append(element)
 
     if choice == 1:
+ 
+ 
+        print("Sum:", sum(arr) * 2)   
+ 
+ 
+        print("Sum:", sum(arr) )   
+ 
         print("Sum:", sum(arr))   
+ 
+ 
+ 
+        print("Sum:", sum(arr))  
+ 
+ 
     elif choice == 2:
         print("Largest Element:", max(arr))  
     elif choice == 3:
+ 
         print("Smallest Element:", min(arr))   
     elif choice == 4:
- 
-        arr.sort()  # sorts the array in ascending order by default
-        print("Sorted Array:", arr) 
+        print("Sorted Array:", sorted(arr) )
     else:
         print("Invalid option")
 array_operations_menu()
  
-        arr.sort()
+        print("Smallest Element:", min(arr))  
+    elif choice == 4:
  
-        print("Sorted Array:", arr) 
+ 
+        print("Sorted Array:",sorted.arr) 
     else:
         print("Invalid option")
-array_operations_menu()
- 
-        print("Sorted Array:",arr) 
-    else:
-        print("Invalid option")
+
 array_operations_menu()
    

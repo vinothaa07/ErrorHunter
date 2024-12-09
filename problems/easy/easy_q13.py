@@ -14,8 +14,17 @@ def month_name(month):
         11: "November",
         12: "December"
     }
-    return switch[month + 1]   
+ 
+    return switch.get(month, "Invalid Month")
+ 
 if __name__ == "__main__":
+ 
+    month = int(input("Enter the Month: "))
+    result = month_name(month)
+    print(result)
+ 
     chooseMonthNum = int(input("Enter the Month: "))
     result = month_name(chooseMonthNum)
+ 
     print(result)
+ 

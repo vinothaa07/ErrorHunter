@@ -9,6 +9,7 @@ def student_record_menu():
             print("5. Exit")
             choice = int(input("Enter your choice: "))
 
+
             if choice == 1:
                 roll = input("Enter Roll Number: ")
                 name = input("Enter Name: ")
@@ -33,7 +34,6 @@ def student_record_menu():
             elif choice == 5:
                 print("Exiting...")
                 break
-            else:
-                print("Invalid Choice")
+
 
 student_record_menu()       #function call made
