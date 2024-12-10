@@ -1,3 +1,4 @@
+ 
 '''
 Create a menu to perform basic mathematical operations (addition, subtraction, multiplication, division, modulo) on two numbers.
 
@@ -8,8 +9,10 @@ def math_operations_menu():
     print("3. Multiply")
     print("4. Divide")
     print("5. Modulo")
+    
     choice = int(input("Enter your choice: "))
-
+ 
+ 
     a=int(input("enter a number1:"))
     b=int(input("enter a number2:"))
     if choice == 2:
@@ -28,3 +31,15 @@ def math_operations_menu():
     else:
         print("Invalid option")
 math_operations_menu()
+ 
+    a, b = map(int , input("Enter two numbers: ").split())
+
+    if choice == 1:
+        print("addition:", a + b)
+    elif choice == 2:
+        print("subtraction:", a - b)   
+    elif choice == 3:
+        print("multiply:", a * b)   
+    elif choice == 4:
+        print("divide:", a / b)   
+ 
