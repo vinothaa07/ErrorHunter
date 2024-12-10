@@ -1,6 +1,11 @@
 # Leap Year or Not: Write a program to determine whether a given year is a leap year.
 def is_leap_year(year):
  
+    if year % 4 == 0 and year > 0:   
+        return "Leap Year" 
+    else:  
+ 
+ 
     if year % 4 == 0 and  year % 100 != 0 or year % 400 == 0:   
         return "a Leap Year"   
     return " not a Leap Year"
@@ -11,6 +16,7 @@ def is_leap_year(year):
  
         return "Leap Year"
     else:   
+ 
         return "Not a Leap Year"
 if __name__ == "__main__":
     year = int(input("Enter the year :"))
@@ -34,10 +40,4 @@ if __name__ == "__main__":
  
  
  
- 
- 
-if __name__ == "__main__":
-    num = int(input("Enter the year: "))
-    res = is_leap_year(num)
-    print("it is",res)
  

@@ -1,8 +1,13 @@
 # Print Last Character of String
  
+def last_char_of_string(s):
+    return s[-1]  # Bug: Fetches second-to-last character instead of last
+ 
+ 
 def last_string(s):
     return s[-1]
 
+ 
 if __name__ == "__main__":
     s = input("Enter a string: ")
     if s:
@@ -13,7 +18,11 @@ if __name__ == "__main__":
 def last_char_of_string(s):
  
  
- # Handle the input  by Yourself
+ 
+ user = input("Enter a character:")
+ print(last_char_of_string(user))
+ 
+ 
  str=input("Enter the string :")
 last_str= last_char_of_string(str)
 print(last_str)
@@ -22,5 +31,3 @@ print(last_str)
     return s[-1]  
  
  
- 
-  

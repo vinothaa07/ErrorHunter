@@ -22,6 +22,11 @@ def largest_of_two(a, b):
     else:
         return b
  
+ 
+        return a  
+    else:
+        return b
+ 
         return a   
     else:
 
@@ -31,4 +36,4 @@ if __name__ == "__main__":
     num1 = int(input("Enter the First Number :"))
     num2 = int(input("Enter the Second Number :"))
     res = largest_of_two(num1,num2)
- 
+    print(res)

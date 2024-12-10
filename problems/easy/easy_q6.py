@@ -13,28 +13,11 @@ def print_numbers(num):
         print(i)
  
         i += 1   
-
-if __name__ == "__main__":
-    num_1 = int(input("Enter the Number "))
-    res = print_numbers(num_1)
-    print(res)
- 
-        i+=1   
- 
-    while i <=num:
-        print(i)
- 
- 
-        i+=1  
- 
- 
-        i += 1
- 
- 
+        
 
 if __name__ == "__main__":
     num = int(input("Enter the Number :"))
-    print_numbers(num)
+    res = print_numbers(num)
  
         i += 1   
  

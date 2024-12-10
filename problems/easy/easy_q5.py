@@ -8,22 +8,6 @@ def grade_system(marks):
         return "C"   
     else:
         return "F"  
- 
- 
- 
- 
-    
-if __name__ == "__main__":
- 
-      num = int(input("Enter the Mark : "))
-      res = grade_system(num)
-      print(res)
- 
+
       
- 
-   num =  int(input("Enter the Mark : "))
-    res = grade_system(num)
-    print(res)
- 
- 
- 
+     # Solve the bug.

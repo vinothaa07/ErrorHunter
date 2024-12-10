@@ -5,12 +5,20 @@ def sum_of_digits(num):
     while num > 0:
  
         digits = num%10
+        total += digits
+ 
+ 
+        digits = num%10
         total += digits 
+ 
         num //= 10
     return total
 
 if __name__ == "__main__":
     number = int(input("Enter the Number : "))
+ 
+    print(sum_of_digits(number))
+ 
     print("Sum of digits:",sum_of_digits(number))
     
     
