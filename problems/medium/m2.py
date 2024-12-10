@@ -6,6 +6,9 @@ def array_operations_menu():
 
     choice = int(input("Enter your choice: "))
 
+ 
+    arr = list(map(int, input("Enter array elements separated by space: ").split(sep=",")))
+ 
 
  
     arr = []
@@ -13,7 +16,7 @@ def array_operations_menu():
     for i in range(n):
         element = int(input(f"Enter element {i+1}: "))
         arr.append(element)
-
+ 
     if choice == 1:
  
  
@@ -56,8 +59,6 @@ if __name__ == "__main__":
  
 array_operations_menu()
  
- 
-array_operations_menu()
    
  
  

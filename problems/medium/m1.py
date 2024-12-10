@@ -79,8 +79,6 @@ math_operations_menu()
     elif choice == 5:
         print("Modulo:", a // b)   
     else:
-        print("Invalid option")
  
+        print("Invalid Value!!!")
  
- 
-  
