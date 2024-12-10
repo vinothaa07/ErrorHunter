@@ -1,10 +1,12 @@
+import random
+ 
 def rock_paper_scissors():
     print("Welcome to Rock, Paper, Scissors!")
     choices = ["rock", "paper", "scissors"]
-    
     while True:
         user_choice = input("Enter rock, paper, or scissors (or 'quit' to exit): ").lower()
         if user_choice == "quit":
+            print("Exited!!!")
             break
         if user_choice not in choices:
             print("Invalid choice! Try again.")

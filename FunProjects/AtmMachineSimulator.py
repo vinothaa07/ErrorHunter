@@ -3,13 +3,19 @@ class ATM:
         self.balance = balance
 
     def deposit(self, amount):
+ 
         global deposit_history
         if amount <= 0:
+ 
+        if amount >= 0:
+ 
             print("Amount must be positive.")
         else:
             self.balance += amount
             print(f"Deposited {amount}. Current balance: {self.balance}")
+ 
             deposit_history[count] = self.balance
+ 
 
     def withdraw(self, amount):
         global withdraw_history
@@ -38,6 +44,7 @@ def both():
             d+=1
             
 
+ 
 withdraw_history = {}
 deposit_history = {}
 result = {}
@@ -90,3 +97,9 @@ while True:
         break
     else:
         print("###INVALID CHOICE###")  
+ 
+atm = ATM(1000)
+atm.deposit(200)
+atm.withdraw(1500)
+atm.withdraw(500)
+ 
