@@ -9,6 +9,14 @@ def check_number(num):
     if num < 0:
         print("Negative")  
     elif num > 0:
+        print("Positive")    
+    else:
+        print("zero")
+ 
+ 
+    if num < 0:
+        print("Negative")  
+    elif num > 0:
  
  
     if num>0:
@@ -20,7 +28,7 @@ def check_number(num):
         print(" zero")   
  
  
-        
+   
 if __name__ == "__main__":
     num = int(input(("Enter the Number : ")))
  
