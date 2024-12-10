@@ -1,5 +1,8 @@
 # Positive, Negative, or Zero: Accept a number and check if it is positive, negative, or zero.
  
+def check_number(num):
+ 
+ 
  
 num = int(input("Enter the Number : "))
     if num < 0:
@@ -12,15 +15,4 @@ num = int(input("Enter the Number : "))
         print("Number is negative")   
         exit()
  
- 
-    if num < 0:
-        print("Negative")  
-    elif num > 0:
-        print("Positive")  
-    else:
-        print("Number is Zero(0)")   
- 
-        
- 
- 
- 
+  
