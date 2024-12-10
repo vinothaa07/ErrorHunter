@@ -4,6 +4,16 @@ def is_palindrome(num):
  
     reverse = 0
  
+    do 
+    reverse = reverse * 10 + num % 10
+    num //= 10
+    while num != 0 :
+        reverse == original
+if __name__ == "__main__":
+    nums = int(input("Enter the Number: "))
+    res = is_palindrome(nums)
+ 
+ 
     do:
  
     while num != 0:
@@ -20,6 +30,7 @@ def is_palindrome(num):
         print("its palindrome")
     else:
         print("its not palindrome")
+ 
  
     print(res)
  
