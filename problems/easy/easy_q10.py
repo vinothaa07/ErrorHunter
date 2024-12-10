@@ -22,15 +22,5 @@ if __name__ == "__main__":
         num //= 10
     
     return reverse == original
-
  
- 
- 
-    if res:
-        print("its palindrome")
-    else:
-        print("its not palindrome")
- 
- 
-    print(res)
  
