@@ -23,3 +23,18 @@ num = int(input("Enter a number: "))
 call=is_prime(num)
 print(call)
 
+ 
+while True:
+    try:
+        n = int(input("Enter a number: "))
+        break
+    except:
+        print("Enter valid a integer.")
+
+
+if is_prime(n):
+    print(f"{n} is a prime number.")
+else:
+    print(f"{n} is not a prime number.")
+    
+ 

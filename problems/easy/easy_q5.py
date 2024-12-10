@@ -1,17 +1,22 @@
-# Grading System: Write a program that takes a student’s marks as input and prints the grade (A, B, C, or F) based on given thresholds.
-
 def grade_system(marks):
+ 
     if marks >= 90:
-        return "B"  
+        return "A"  
     elif marks >= 80:
-        return "A"   
+        return "B"   
     elif marks >= 70:
-        return "F"   
+ 
+        return "c"   
     else:
-        return "C"  
+        return "F"  
     
 if __name__ == "__main__":
-      num = input("Enter the Mark : ")
+      num = int(input("Enter the Mark : "))
       res = grade_system(num)
       print(res)
-      
+ 
+        return "C"   
+    else:
+        return "F"  
+
+ 
