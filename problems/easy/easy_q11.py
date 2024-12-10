@@ -1,5 +1,5 @@
-# Day of the Week: Write a program that takes a number (1-7) and prints the corresponding day of the week using a switch case.
 def day_of_week(day):
+ 
     switch = {
         1: "Monday",
         2: "Tuesday",
@@ -9,10 +9,18 @@ def day_of_week(day):
         6: "Saturday",
         7: "Sunday"
     }
-    return switch[8]   
+ 
+    return switch[day]   
 if __name__ == "__main__":
     
-    xcd = day_of_week(32)
+    a= day_of_week(7)
+    print(a)
+    
+ 
+    return switch.get(day)
+if __name__ == "__main__":
+    day=int(input("Enter day number:"))
+    xcd = day_of_week(day)
+ 
     print(xcd)
-    
-    
+  
