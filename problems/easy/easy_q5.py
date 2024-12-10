@@ -5,9 +5,18 @@ def grade_system(marks):
     elif marks >= 80:
         return "B"   
     elif marks >= 70:
+ 
+        return "c"   
+    else:
+        return "F"  
+    
+if __name__ == "__main__":
+      num = int(input("Enter the Mark : "))
+      res = grade_system(num)
+      print(res)
+ 
         return "C"   
     else:
         return "F"  
 
-      
-     # Solve the bug.
+ 

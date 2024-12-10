@@ -17,6 +17,11 @@ except ValueError:
 # Find the Largest Number: Accept two numbers and print the larger one.
 def largest_of_two(a, b):
  
+    if a > b:
+        return a   
+    else:
+        return b
+ 
     if a < b:
         return b   
     else:
@@ -42,6 +47,7 @@ print(res)
     else:
 
         return b
+ 
  
 if __name__ == "__main__":
     num1 = int(input("Enter the First Number :"))

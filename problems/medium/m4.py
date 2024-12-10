@@ -9,6 +9,19 @@ def number_analysis_menu():
     n = int(input("Enter a number: "))
 
     if choice == 1:
+ 
+        a=0
+        if n<1:
+            print("not a prime")
+        elif n==2:
+            print("prime")
+        else:
+            a=int(n**0.5)+1
+            for i in range(2,a):
+                if (n%i==0):
+                    print("not a prime")
+                    break
+ 
         is_prime = True
         for i in range(2, n):  
             if n % i == 0:
@@ -17,6 +30,7 @@ def number_analysis_menu():
             print("The Number is Prime Number")
         else:
             print("The Number is Not a Prime Number")  
+
     elif choice == 2:
         factorial = 1
         for i in range(1, n + 1):
@@ -24,7 +38,7 @@ def number_analysis_menu():
         print("Factorial:", factorial)
     elif choice == 3:
         fib = [0, 1]
-        for i in range(2, n + 1):
+        for i in range(1,n):
             fib.append(fib[-1] + fib[-2])
         print("Fibonacci Sequence:", fib)  
     elif choice == 4:
@@ -36,6 +50,7 @@ def number_analysis_menu():
     else:
         print("Invalid option")
 number_analysis_menu()
+ 
  
     
     try:
