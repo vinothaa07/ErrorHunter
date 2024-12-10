@@ -47,6 +47,17 @@ array_operations_menu()
         print("Sorted Array:",sorted.arr) 
     else:
         print("Invalid option")
+ 
+ 
 
+if __name__ == "__main__":
+    array_operations_menu()
+ 
+ 
+array_operations_menu()
+ 
+ 
 array_operations_menu()
    
+ 
+ 
