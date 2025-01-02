@@ -86,11 +86,21 @@ math_operations_menu()
     elif choice == 4:
         print("Divide:", a / b)   
     elif choice == 5:
-        print("Modulo:", a % b)   
-    else :
-        print("Invalid option")
-math_operations_menu()
-=======  
-        print("Invalid Value!!!")
+ 
+        print(f"Modulus of {a} and {b}:{a // b}")   
+    elif choice == 6:
+        print(f"{a} to the power of {b}:{a**b}")
+    else:
+        print("Invalid option!!!")
+print("-------------Mathematical operation menu--------------------")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+print("5. Modulus")
+print("6. Expontential")
+ 
+ )
+ 
  
  
