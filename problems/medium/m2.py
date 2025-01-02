@@ -3,18 +3,25 @@ def array_operations_menu():
     print("2. Largest Element")
     print("3. Smallest Element")
     print("4. Sort Array")
+ 
+    try:
+        choice = int(input("Enter your choice: "))
+
+        arr = list(map(int, input("Enter array elements separated by space: ").split()))
+
+        if choice == 1:
+           print("Sum:", sum(arr))   
+        elif choice == 2:
+            print("Largest Element:", max(arr))  
+        elif choice == 3:
+            print("Smallest Element:", min(arr))   
+        elif choice == 4:
+            print("Sorted Array:",sorted(arr)) 
+        else:
+            print("Invalid option")
+    except ValueError:
+           print("Invalid option")
+
     choice = int(input("Enter your choice: "))
 
-    arr = list(map(int, input("Enter array elements separated by space: ").split(sep=",")))
-
-    if choice == 1:
-        print("Sum:", sum(arr) * 2)   
-    elif choice == 2:
-        print("Largest Element:", min(arr))  
-    elif choice == 3:
-        print("Smallest Element:", max(arr))   
-    elif choice == 4:
-        print("Sorted Array:", arr) 
-    else:
-        print("Invalid option")
-array_operations_menu()
+  
